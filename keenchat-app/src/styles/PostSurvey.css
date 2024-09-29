@@ -1,0 +1,99 @@
+fieldset {
+    all: unset; 
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+}
+.form-background {
+    background-color: #f2e9f9; 
+}
+
+form .question {
+    all: unset;
+    display: block;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 0.35em 0.75em;
+    border: 2px groove rgb(192, 192, 192);
+}
+
+.likertBand {
+    all: unset;
+    display: flex;
+    padding-top: 1em;
+}
+
+/* Style the fieldset for overall question grouping */
+.question {
+    border: none; /* Optional: remove the border if you prefer */
+    margin-bottom: 200px; /* Space between questions */
+}
+
+/* Legend styling for question titles */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.likertBand {
+    display: flex;
+    justify-content: center; /* Center align the options for aesthetic symmetry */
+    gap: 50px; /* This controls the space between each option */
+}
+
+.likert-option {
+    display: flex;
+    flex-direction: column; /* Stack the circle and text vertically */
+    align-items: center; /* Center align the text below the circle */
+}
+
+.likert-option .circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #dac1ee; /* Default background */
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    user-select: none; /* Prevent text selection */
+}
+
+.likert-option .option-text {
+    margin-top: 10px; /* Adjust space between circle and text */
+    text-align: center;
+    display: block; /* Ensure the text is on a new line below the circle */
+}
+
+.likert-option input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+.likert-option input[type="radio"]:checked + label {
+    background-color: #673ab7; /* Change when selected */
+    transform: scale(1.1); /* Slightly enlarge the selected option */
+}
+
+.likert-option label:hover {
+    background-color: #9c27b0; /* Color change on hover */
+}
+.center-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.form-background .send-button {
+    background-color: #fbd38d;
+    color: #333;
+}
+
+

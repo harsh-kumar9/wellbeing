@@ -1,0 +1,194 @@
+/* Define a class for fading in messages */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the element */
+.fade-in-backchannel {
+  animation: fadeIn 1.2s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the element */
+.fade-in-out-backchannel {
+  animation: fadeInOut 2s forwards;
+}
+.convo-history {
+  flex: 1;
+  flex-direction: column;
+}
+
+.conversation {
+  background-color: #f9f2e9;
+  font-family: Arial, sans-serif;
+  padding: 5px 20px 0px 20px;
+  height: 100vh;
+}
+
+.convo-history-container {
+  border: 1px solid #d6d2c4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: auto;
+  text-align: right;
+}
+
+.single-convo {
+  margin-bottom: 15px;
+}
+
+.human-convo {
+  background-color: #fdf0dc;
+  color: #333;
+  margin: 5px 5px 5px auto;
+  padding: 5px 15px;
+  border-radius: 35px 35px 0px 35px;
+  display: inline-block;
+  max-width: 70%;
+  min-width: 15px;
+  width: auto;
+  text-align: right;
+}
+
+
+.bot-convo-container {
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+
+.bot-convo {
+  background-color: #d6d2c4;
+  /* background-color: #f9bd0a; */
+  color: #333;
+  margin: 5px auto 5px 5px;
+  padding: 5px 15px;
+  border-radius: 35px 35px 35px 0px;
+  display: inline-block;
+  max-width: 70%;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.message-form .send-button{
+  background-color: 	#9932CC;
+  color: white;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  font-size: large;
+}
+
+.message-form .send-button:hover{
+  background-color: #BA55D3;
+  color: white;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+}
+
+#bot_avatar_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bot_avatar {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.bot_avatar {
+  display: flex;
+  align-items: center; /* Align vertically in the center */
+}
+
+.bot_avatar img {
+  /* If you need to control the image size or any other styling */
+  /* Example: max-width: 100px; */
+}
+
+.bot_avatar span {
+  /* Any additional styling for the text */
+  /* Example: font-weight: bold; */
+}
+
+.backchannel_container {
+  background-color: #f9bd0a;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block; /* This will make the container only as wide as its content */
+}
+
+.backchannel_container p {
+  font-style: italic;
+  margin: 0; /* Remove default margins from the paragraph */
+}
+.convo-header-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.exit-session-button {
+  padding: 5px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: #f9f2e9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exit-session-button:hover {
+  background-color: #f9f2e9; 
+  color:blue;
+} 
+
+/* #exit_button_img {
+  width: 30px;
+  height: 45px;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+
+#exit_button_img :hover {
+  width: 10px;
+  height: 10px;
+  border-radius: 5%;
+  margin-right: 10px;
+  background-color: #b22222;
+} */
