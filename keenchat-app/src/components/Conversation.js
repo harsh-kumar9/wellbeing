@@ -12,7 +12,7 @@ import bot_talk from "../assets/bot-talk.png";
 import bot_listen from "../assets/bot-listen.png";
 import exit_button from "../assets/exit-button.jpg";
 import * as sdk from "microsoft-cognitiveservices-speech-sdk";
-import { PostSessionSurvey } from "./PostSessionSurvey";
+import PostSessionSurvey from './PostSessionSurvey';
 import { useNavigate } from 'react-router-dom';
 
 // Azure Speech Services credentials

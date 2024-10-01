@@ -48,7 +48,7 @@ const PreSurvey = () => {
                     setCurrentQuestionIndex(currentQuestionIndex + 1);
                     setIsExiting(false);  // Reset for slide-in
                 } else {
-                    navigate('/end-survey');  // Handle survey completion
+                    navigate('/end-pre-survey');  // Handle survey completion
                 }
             }
         }
