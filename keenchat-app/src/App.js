@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Conversation from "./components/Conversation";
 import PostSessionSurvey from "./components/PostSessionSurvey";
 import PreSurvey from "./components/PreSessionSurvey";
-import EndSurvey from "./components/EndSurvey";
+import EndPreSurvey from "./components/EndPreSurvey";
+import EndPostSurvey from "./components/EndPostSurvey";
 
 // 6 routes for 6 different conversation types
 // 1. voice-voice: voice bot message, voice bot backchannelType
@@ -104,9 +105,16 @@ function App() {
             }
           />
           <Route
-            path="/end-survey"
+            path="/end-pre-survey"
             element={
-              <EndSurvey
+              <EndPreSurvey
+              />
+            }
+          />
+          <Route
+            path="/end-post-survey"
+            element={
+              <EndPostSurvey
               />
             }
           />
