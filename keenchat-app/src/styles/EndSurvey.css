@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     margin: 30vh auto; 
-    max-width: 90%;
+    max-width: 50%;
 }
 
 @media (max-width: 480px) { /* For phones */
     .container {
       margin: 30vh auto; /* Minimal vertical margin for small devices */
-      max-width: 80%; /* Use full width for small screens */
+      max-width: 80%; 
     }
 }
